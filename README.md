@@ -77,36 +77,55 @@ A star schema was designed with the loan applications table as the central fact 
 
 ### Executive Overview
 
+This page provides a high-level view of mortgage loan applications, requested amounts, approval rates, pending applications, approved loan amounts, and average LTV.
+
 ![Executive Overview](dashboard/executive-overview.png)
 
 ### Risk Analysis
 
+This page analyzes high-risk applications, credit scores, payment history, LTV levels, credit bands, and application status.
+
 ![Risk Analysis](dashboard/risk-analysis.png)
 
-### Applicant Analysis
+### Underwriter and Product Performance
 
-![Applicant Analysis](dashboard/applicant-analysis.png)
+This page evaluates underwriter workload and approval performance while comparing mortgage loan products.
 
-### Underwriter Performance
+![Underwriter and Product Performance](dashboard/underwriter-and-product-performance.png)
 
-![Underwriter Performance](dashboard/underwriter-performance.png)
+## Advanced Analytics Features
 
-### Data Quality
+### Dynamic Field Parameter
 
-![Data Quality](dashboard/data-quality.png)
+The Field Parameter allows users to switch dynamically between analytical measures and compare different business metrics.
+
+![Field Parameter](dashboard/field-parameter.png)
+
+### Top N Analysis
+
+The Top N page enables users to identify and compare the highest-performing underwriters, products, or geographical segments.
+
+![Top N Analysis](dashboard/top-n.png)
+
+### Decomposition Tree
+
+The Decomposition Tree supports drill-down analysis of mortgage applications and requested amounts across dimensions such as state, product, risk level, credit band, and underwriter.
+
+![Decomposition Tree](dashboard/decomposition-tree.png)
 
 ## Dashboard Features
 
 - Interactive slicers and filters
-- Drillthrough analysis
-- Custom tooltips
 - Page navigation
 - Dynamic KPI cards
 - Risk-level segmentation
 - Credit score segmentation
 - Loan-to-Value analysis
-- Underwriter performance comparison
-
+- Underwriter and product performance analysis
+- Dynamic Field Parameter
+- Top N analysis
+- Decomposition Tree
+  
 ## Analytical Questions
 
 The dashboard investigates questions such as:
@@ -120,11 +139,10 @@ The dashboard investigates questions such as:
 
 ## Repository Structure
 
-- `dashboard/`: Dashboard screenshots
-- `model/`: Power BI data model
-- `powerbi/`: PBIX project file
-- `report/`: Analytical report
-- `documentation/`: DAX measures and data documentation
+- `dashboard/`: Screenshots of dashboard pages and advanced analytical features
+- `model/`: Star-schema data model
+- `powerbi/`: Power BI project file
+- `documentation/`: Persian analytical findings and managerial recommendations
 
 ## Author
 
